@@ -1,0 +1,27 @@
+name: lijazsalim/simple-maven-app
+on:
+  push:
+  workflow_dispatch:
+concurrency:
+  group: "${{ github.ref }}"
+  cancel-in-progress: true
+jobs:
+  verify-jdk8:
+    runs-on: ubuntu-latest
+    container:
+      image: maven:3.3.9-jdk-8
+    if: !(github.ref == 'refs/heads/master')
+    timeout-minutes: 60
+    env:
+      MAVEN_OPTS: "-Dhttps.protocols=TLSv1.2 -Dmaven.repo.local=${{ github.workspace }}/.m2/repository -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=WARN -Dorg.slf4j.simpleLogger.showDateTime=true -Djava.awt.headless=true"
+      MAVEN_CLI_OPTS: "--batch-mode --errors --fail-at-end --show-version -DinstallAtEnd=true -DdeployAtEnd=true"
+    steps:
+    - uses: actions/checkout@v4.1.0
+      with:
+        fetch-depth: 0
+        lfs: true
+    - uses: actions/cache@v3.3.2
+      with:
+        path: ".m2/repository"
+        key: default
+    - run: mvn $MAVEN_CLI_OPTS verify

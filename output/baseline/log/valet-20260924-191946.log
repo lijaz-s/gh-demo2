@@ -1,0 +1,26 @@
+# Logfile created on 2026-09-24 19:19:46 +0000 by logger.rb/v1.6.0
+I, [2026-09-24T19:19:46.478930 #1]  INFO -- : Using GitHub Features: Defaults
+I, [2026-09-24T19:19:46.502697 #1]  INFO -- request: GET https://gitlab.com/api/v4/projects/lijazsalim%2Fsimple-maven-app
+I, [2026-09-24T19:19:47.198048 #1]  INFO -- response: Status 200
+I, [2026-09-24T19:19:47.199797 #1]  INFO -- request: GET https://gitlab.com/api/v4/projects/lijazsalim%2Fsimple-maven-app
+I, [2026-09-24T19:19:47.994725 #1]  INFO -- response: Status 200
+I, [2026-09-24T19:19:48.005461 #1]  INFO -- request: GET https://gitlab.com/api/v4/projects/lijazsalim%2Fsimple-maven-app/repository/files/.gitlab-ci.yml?ref=master
+I, [2026-09-24T19:19:48.622296 #1]  INFO -- response: Status 200
+I, [2026-09-24T19:19:48.624592 #1]  INFO -- request: GET https://gitlab.com/api/v4/projects/lijazsalim%2Fsimple-maven-app/variables
+I, [2026-09-24T19:19:49.164219 #1]  INFO -- response: Status 200
+I, [2026-09-24T19:19:49.165605 #1]  INFO -- request: GET https://gitlab.com/api/v4/groups/lijazsalim/variables
+I, [2026-09-24T19:19:49.669950 #1]  INFO -- response: Status 404
+W, [2026-09-24T19:19:49.671611 #1]  WARN -- : Unable to fetch group variables for 'lijazsalim'
+I, [2026-09-24T19:19:49.673028 #1]  INFO -- request: GET https://gitlab.com/api/v4/projects/lijazsalim%2Fsimple-maven-app/pipeline_schedules
+I, [2026-09-24T19:19:50.166852 #1]  INFO -- response: Status 200
+D, [2026-09-24T19:19:50.190977 #1] DEBUG -- : [Transformers::GitlabCI::On]: Located transformer for 'push'
+D, [2026-09-24T19:19:50.191641 #1] DEBUG -- : [Transformers::GitlabCI::On]: Located transformer for 'merge_request'
+D, [2026-09-24T19:19:50.192084 #1] DEBUG -- : [Transformers::GitlabCI::On]: Located transformer for 'manual'
+D, [2026-09-24T19:19:50.195316 #1] DEBUG -- : [Transformers::GitlabCI::Steps]: Located transformer for 'checkout'
+D, [2026-09-24T19:19:50.196940 #1] DEBUG -- : [Transformers::GitlabCI::Steps]: Located transformer for 'cache'
+D, [2026-09-24T19:19:50.199535 #1] DEBUG -- : [Transformers::GitlabCI::Steps]: Located transformer for 'script'
+I, [2026-09-24T19:19:50.234134 #1]  INFO -- : Output file(s):
+I, [2026-09-24T19:19:50.261114 #1]  INFO -- :   ./output/baseline/lijazsalim/simple-maven-app/.github/workflows/simple-maven-app.yml
+I, [2026-09-24T19:19:50.266465 #1]  INFO -- request: GET https://api.github.com/user
+I, [2026-09-24T19:19:50.782120 #1]  INFO -- response: Status 200
+I, [2026-09-24T19:19:50.783690 #1]  INFO -- : Sending telemetry with transaction id 'd9382496-6faa-4477-91a1-0729a79aba54'

@@ -1,0 +1,25 @@
+﻿{
+    "validated_at":  "2026-09-25T00:54:50.6819542+05:30",
+    "source_commit":  "18f9da381b0ef56a12fda9d43331e83cf1b0c601",
+    "source_sha256":  "6DB168FD5BC05F370D6E642B5CFFCC5A2234F261ADB69C1681C389976FD42D95",
+    "workflow_sha256":  "ECD92F0B82F143D3AB169CFD280047466EB787E2B89B0590356A7E04A461D110",
+    "source":  "simple-maven-app/.gitlab-ci.yml",
+    "workflow":  "output\\baseline\\lijazsalim\\simple-maven-app\\.github\\workflows\\simple-maven-app.yml",
+    "github_repository":  "LijazS/gh-demo1",
+    "registered_workflows":  0,
+    "hosted_runs":  0,
+    "actionlint_version":  "1.7.12",
+    "actionlint_exit":  1,
+    "syntax_only_actionlint_exit":  0,
+    "node_probe_version":  "20.19.0",
+    "node_probe_exit":  1,
+    "image":  "maven:3.3.9-jdk-8",
+    "image_digest":  "sha256:18e8bd367c73c93e29d62571ee235e106b18bf6718aeb235c7a07840328bba71",
+    "maven_verify_exit":  0,
+    "tests":  {
+                  "run":  1,
+                  "failures":  0,
+                  "errors":  0,
+                  "skipped":  0
+              }
+}
