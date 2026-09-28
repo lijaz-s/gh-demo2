@@ -1,0 +1,3 @@
+[submodule "simple-maven-app"]
+	path = simple-maven-app
+	url = https://github.com/LijazS/gh-demo1.git

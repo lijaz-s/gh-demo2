@@ -1,0 +1,54 @@
+Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T16:41:47+00:00)
+Maven home: /usr/share/maven
+Java version: 1.8.0_121, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en, platform encoding: UTF-8
+OS name: "linux", version: "6.6.87.2-microsoft-standard-wsl2", arch: "amd64", family: "unix"
+827 [INFO] Error stacktraces are turned on.
+884 [INFO] Scanning for projects...
+944 [INFO]
+944 [INFO] ------------------------------------------------------------------------
+944 [INFO] Building simple-maven-app 1.0
+944 [INFO] ------------------------------------------------------------------------
+16859 [INFO]
+16859 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ simple-maven-app ---
+48347 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+48350 [INFO] skip non existing resourceDirectory /workspace/src/main/resources
+48351 [INFO]
+48351 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ simple-maven-app ---
+80057 [INFO] Changes detected - recompiling the module!
+80060 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+80134 [INFO] Compiling 1 source file to /workspace/target/classes
+81319 [INFO]
+81319 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ simple-maven-app ---
+81321 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+81323 [INFO] skip non existing resourceDirectory /workspace/src/test/resources
+81324 [INFO]
+81324 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ simple-maven-app ---
+81616 [INFO] Changes detected - recompiling the module!
+81616 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+81690 [INFO] Compiling 1 source file to /workspace/target/test-classes
+82485 [INFO]
+82485 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ simple-maven-app ---
+93590 [INFO] Surefire report directory: /workspace/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.example.app.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+98673 [INFO]
+98673 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ simple-maven-app ---
+108281 [INFO] Building jar: /workspace/target/simple-maven-app-1.0.jar
+108604 [INFO] ------------------------------------------------------------------------
+108604 [INFO] BUILD SUCCESS
+108604 [INFO] ------------------------------------------------------------------------
+108605 [INFO] Total time: 01:47 min
+108605 [INFO] Finished at: 2026-09-27T17:48:36+00:00
+108688 [INFO] Final Memory: 16M/108M
+108688 [INFO] ------------------------------------------------------------------------

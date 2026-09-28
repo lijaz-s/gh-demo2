@@ -1,0 +1,11 @@
+{
+    "generated_utc":  "2026-09-27T17:45:50.3014921Z",
+    "importer_version":  "gh version 2.91.0 (2026-04-22)\r\nhttps://github.com/cli/cli/releases/tag/v2.91.0\r\ngh actions-importer\tgithub/gh-actions-importer\tv1.3.6\r\nactions-importer/cli:latest\tv1.3.22671",
+    "importer_image":  "ghcr.io/actions-importer/cli@sha256:a8a25521e5d73671ba7ce1bc4f86de956dd7be4705bf75e775581fcbad453c2d",
+    "source_project":  "https://gitlab.com/lijazsalim/simple-maven-app",
+    "source_mode":  "Live GitLab project, including project settings; not a local YAML-only conversion",
+    "native_transformers":  false,
+    "raw_output_sha256":  "ecd92f0b82f143d3ab169cfd280047466eb787e2b89b0590356a7e04a461d110",
+    "local_reference_source_sha256":  "6db168fd5bc05f370d6e642b5cffcc5a2234f261adb69c1681c389976fd42d95",
+    "hosted_execution":  "not-run"
+}

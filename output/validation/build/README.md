@@ -1,3 +1,0 @@
-# README
-
-Simple maven application

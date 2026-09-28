@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Generated evidence must retain its recorded byte hashes across platforms.
+Outputs/** -text whitespace=cr-at-eol

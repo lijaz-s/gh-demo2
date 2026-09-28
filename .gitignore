@@ -1,0 +1,12 @@
+# Local credentials and execution/download scratch space
+.env.local
+.env.*.local
+.work/
+**/.venv/
+**/__pycache__/
+**/target/
+transformer-wrapper/tools/
+
+# Personal learning and presentation notes (local only)
+/README.learning.local.md
+/README.presentation.local.md

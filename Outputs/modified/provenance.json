@@ -1,0 +1,18 @@
+{
+    "generated_utc":  "2026-09-27T17:46:05.5303169Z",
+    "importer_version":  "gh version 2.91.0 (2026-04-22)\r\nhttps://github.com/cli/cli/releases/tag/v2.91.0\r\ngh actions-importer\tgithub/gh-actions-importer\tv1.3.6\r\nactions-importer/cli:latest\tv1.3.22671",
+    "importer_image":  "ghcr.io/actions-importer/cli@sha256:a8a25521e5d73671ba7ce1bc4f86de956dd7be4705bf75e775581fcbad453c2d",
+    "source_project":  "https://gitlab.com/lijazsalim/simple-maven-app",
+    "source_mode":  "Live GitLab project, including project settings; not a local YAML-only conversion",
+    "native_transformers":  true,
+    "raw_output_sha256":  "a120ecbe68d70a377b30c5c965f3c3f719beaa10e26f0023b8f6497797560af4",
+    "local_reference_source_sha256":  "6db168fd5bc05f370d6e642b5cffcc5a2234f261adb69c1681c389976fd42d95",
+    "hosted_execution":  "not-run",
+    "transformer_sha256":  "bfa314d5fbb7e1fefd239158b45c3213adb8f734d81eb5fe90cb214105151de0",
+    "postprocessor_sha256":  "027e2caf392498dc09565ae3bbf507ace5e5367471fbffed1e41d2c8036c650a",
+    "final_sha256":  "43e2ec1b021e5c0156b168d9f99b24bbef21a704bd60d8b2878e9b33a31b04f4",
+    "postprocessing":  [
+                           "Escape the known job condition",
+                           "Remove the old job container after native Docker-step conversion"
+                       ]
+}
