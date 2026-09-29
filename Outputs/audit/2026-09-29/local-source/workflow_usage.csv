@@ -1,0 +1,8 @@
+Pipeline,Action,File path
+lijazsalim/simple-maven-app,actions/checkout@v4.1.0,./Outputs/audit/2026-09-29/local-source/lijazsalim/simple-maven-app/.github/workflows/simple-maven-app.yml
+lijazsalim/simple-maven-app,actions/cache@v3.3.2,./Outputs/audit/2026-09-29/local-source/lijazsalim/simple-maven-app/.github/workflows/simple-maven-app.yml
+
+Pipeline,Secret,File path
+
+
+Pipeline,Runner,File path

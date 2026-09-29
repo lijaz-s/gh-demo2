@@ -130,6 +130,8 @@ Git returns exit code 1 when there are differences; this is expected.
 
 ## Observations and limits
 
+Additional importer experiments: [audit results](Outputs/audit/2026-09-29/README.md) and [forecast attempt](Outputs/forecast/2026-09-29/README.md). The local-source audit succeeded; live namespace discovery failed, and no forecast estimate was available.
+
 - The recorded baseline fails actionlint on the malformed condition.
 - Native customization fixes the selected conversion policies but still leaves that syntax defect and the legacy job container. Its intermediate output is therefore not ready for execution.
 - The final workflow passes actionlint and the separate source-preservation/native-hook assertions. This demonstrates useful importer extension for this pipeline, not general semantic equivalence.

@@ -160,3 +160,27 @@ git diff --no-index -- Outputs/modified/native.yml Outputs/modified/simple-maven
 For `git diff --no-index`, exit code 1 means differences were found; it is expected here.
 
 The separate local Maven execution recipe is in [execution.md](Outputs/modified/execution.md). For project scope and limitations, see [README.md](README.md). The generated workflow assumes the application is at the checkout root; these commands do not activate it in this research repository.
+
+## Audit and forecast
+
+Audit conversion coverage using live namespace discovery:
+
+```powershell
+gh actions-importer audit gitlab --namespace lijazsalim --output-dir ./Outputs/audit/2026-09-29 --no-telemetry
+```
+
+The recorded namespace attempt received HTTP 404 from the GitLab group projects endpoint. To audit the supplied local pipeline instead, the following command succeeded:
+
+```powershell
+gh actions-importer audit gitlab --namespace lijazsalim --config-file-path ./Outputs/audit/2026-09-29/source-config.yml --output-dir ./Outputs/audit/2026-09-29/local-source --no-telemetry
+```
+
+Forecast historical runner usage:
+
+```powershell
+gh actions-importer forecast gitlab --namespace lijazsalim --start-date 2026-09-22 --output-dir ./Outputs/forecast/2026-09-29 --no-telemetry
+```
+
+The recorded forecast failed on group discovery, and a separate authenticated project jobs request returned no jobs. No usage forecast was generated. For a future run, choose an accessible group with completed jobs, an appropriate start date, and a fresh output directory.
+
+See [audit results](Outputs/audit/2026-09-29/README.md) and [forecast status](Outputs/forecast/2026-09-29/README.md). Audit conversion success is not a runtime validation guarantee; forecast requires historical job data rather than pipeline YAML.

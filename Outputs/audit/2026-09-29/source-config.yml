@@ -1,0 +1,3 @@
+source_files:
+  - repository_slug: lijazsalim/simple-maven-app
+    path: simple-maven-app/.gitlab-ci.yml

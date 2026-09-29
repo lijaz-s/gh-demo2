@@ -10,3 +10,7 @@ transformer-wrapper/tools/
 # Personal learning and presentation notes (local only)
 /README.learning.local.md
 /README.presentation.local.md
+
+# Importer diagnostics stay local; publish reports and reproducible inputs.
+/Outputs/audit/**/log/
+/Outputs/forecast/**/log/
